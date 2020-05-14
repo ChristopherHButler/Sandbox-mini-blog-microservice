@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 const Header = ({ title }) => {
   return (
-    <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1">{title}</span>
+    <nav className="navbar navbar-dark bg-dark">
+      <span className="navbar-brand mb-0 h1">{title}</span>
     </nav>
   );
 };

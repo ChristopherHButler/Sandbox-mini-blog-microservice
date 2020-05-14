@@ -13,7 +13,8 @@ const PostList = () => {
   }, []);
 
   const fetchPosts = async () => {
-    const res = await axios.get('http://localhost:4002/posts');
+    // not going to actual posts.com, we overrided the hosts file
+    const res = await axios.get('http://posts.com/posts');
     console.log('res: ', res.data);
     setPosts(res.data);
   };

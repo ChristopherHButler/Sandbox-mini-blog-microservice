@@ -10,7 +10,8 @@ export const CommentCreate = ({ postId }) => {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    await axios.post(`http://localhost:4001/posts/${postId}/comments`, {
+    // not going to actual posts.com, we overrided the hosts file
+    await axios.post(`http://posts.com/posts/${postId}/comments`, {
       content
     });
 

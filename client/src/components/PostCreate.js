@@ -7,7 +7,8 @@ const PostCreate = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    await axios.post('http://localhost:4000/posts', {
+        // not going to actual posts.com, we overrided the hosts file
+    await axios.post('http://posts.com/posts/create', {
       title
     });
 
